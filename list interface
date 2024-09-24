@@ -1,0 +1,35 @@
+import java.util.List;
+import java.util.ArrayList;
+
+class HelloWorld {
+    
+    
+    public static void main(String[] args) {
+        
+        List li = new ArrayList();
+        li.add("sri");
+        li.add(10);
+        li.add("null");
+        li.add(true);
+        li.add(null);
+        
+        
+        System.out.println(li);
+        System.out.println(li.size());
+        li.remove(3);
+        System.out.println(li);
+        System.out.println(li.indexOf(10));
+        System.out.println(li.lastIndexOf(10));
+        System.out.println(li.contains(10));
+        System.out.println(li.get(1));
+        System.out.println("============================");
+        
+        
+        for (int i = 0; i<li.size();i++){
+            
+            Object a = li.get(i);
+            System.out.println(a);
+        }
+        
+    }
+}
