@@ -1,0 +1,31 @@
+import java.util.ArrayList;
+import java.util.List;
+
+class HelloWorld {
+    public static void main(String[] args) {
+        List <Integer> a = new ArrayList();
+        a.add(10);
+        a.add(20);
+        a.add(30);
+        
+         List <Integer> b = new ArrayList();
+         b.add(10);
+         b.add(20);
+        
+        
+        //a.removeAll(b);
+        //System.out.println(a);
+        
+        //a.retainAll(b);
+        //System.out.println(a);
+        
+        List <Integer> c = new ArrayList();
+        c.addAll(a);
+        System.out.println("========");
+        System.out.println(c);
+        c.clear();
+        System.out.println(c);
+        
+        
+    }
+}
