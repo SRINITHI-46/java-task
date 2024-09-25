@@ -31,6 +31,13 @@ class HelloWorld {
         s2.add(58);
         s2.add(17);
         System.out.println(s2);
+        System.out.println("============================");
+        System.out.println(s2.size());
+        
+        System.out.println(s2.remove(17));
+        System.out.println(s2);
+         
+        System.out.println(s1.contains("32"));
         
         
     }
