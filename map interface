@@ -1,0 +1,50 @@
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.*;
+import java.util.Map.Entry;
+
+class HelloWorld {
+    public static void main(String[] args) {
+        
+        
+        Map <String ,Integer> m = new HashMap();
+        
+        m.put("csk",7);
+        m.put("RCB",9);
+        m.put("RR",8);
+        m.put("SRH",6);
+        m.put("DD",5);
+        m.put(null,7);
+        
+         System.out.println(m.size());
+          System.out.println(m.containsKey("csk"));
+          System.out.println(m.containsValue(8));
+          
+          
+          m.remove("DD");
+          System.out.println(m);
+          System.out.println("=================");
+          System.out.println(m.keySet());
+          System.out.println(m.values());
+          System.out.println("=================");
+          Set<Entry<String,Integer>> s = m.entrySet();
+          for (Entry<String,Integer> e:s){
+              
+              System.out.println(e);
+              System.out.println(e.getKey());
+              System.out.println(e.getValue());
+              }
+        System.out.println(m);
+        
+        Map <String ,Integer> m1 = new LinkedHashMap();
+        m1.put("csk",7);
+        m1.put("RCB",9);
+        m1.put("RR",8);
+        m1.put("SRH",6);
+        m1.put("DD",5);
+        m1.put(null,7);
+         System.out.println(m1);
+        
+                  
+    }
+}
